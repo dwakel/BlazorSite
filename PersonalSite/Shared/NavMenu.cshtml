@@ -1,8 +1,19 @@
 ﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">PersonalSite</a>
+    @*<span>
+            <img src="img/ico1.png" alt="" width="50" height="50" />
+        </span>
+        <a class="navbar-brand" href="">Selorm Avoke</a>
+        <p>Software Engineer</p>*@
     <button class="navbar-toggler" onclick=@ToggleNavMenu>
         <span class="navbar-toggler-icon"></span>
     </button>
+</div>
+<div>
+    <span>
+        <img src="img/ico1.png" alt="" width="50" height="50" class="image-ico" />
+    </span>
+    <h1 class="navbar-brand" href="">Selorm Avoke</h1>
+    <p>Software Engineer</p>
 </div>
 
 <div class=@(collapseNavMenu ? "collapse" : null) onclick=@ToggleNavMenu>
@@ -13,18 +24,19 @@
             </NavLink>
         </li>
         <li class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+            <NavLink class="nav-link" href="portfolio">
+                <span class="oi oi-plus" aria-hidden="true"></span> Portfolio
             </NavLink>
         </li>
         <li class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            <NavLink class="nav-link" href="about">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> About me
             </NavLink>
         </li>
         <li class="nav-item px-3">
-            <NavLink class="nav-link" href="todo">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Todo
+            <NavLink class="nav-link" href="contact">
+                <span class="nav-icons">&#xE715;</span>
+                <span class="" aria-hidden="true"></span> Contact
             </NavLink>
         </li>
     </ul>

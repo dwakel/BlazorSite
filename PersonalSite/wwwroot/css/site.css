@@ -121,3 +121,27 @@ app {
         display: block;
     }
 }
+
+.image-ico {
+    border-radius: 50%;
+}
+
+#social-media {
+    display: ruby;
+}
+
+#details-card {
+    text-align: center;
+}
+
+.nav-icons {
+    font-family: 'Segoe MDL2 Assets';
+    margin-right: 1em;
+}
+
+#name {
+    font-size: 4rem;
+    margin-top: 2rem;
+    color: var(#cc1f72);
+    font-family: 'Muli' sans-serif;
+}
