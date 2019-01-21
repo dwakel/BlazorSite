@@ -22,4 +22,9 @@
     <Watch Remove="Pages\Projects.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\css\fonts\ionicons\.DS_Store" />
+    <None Include="wwwroot\css\fonts\ionicons\fonts\ionicons.svg" />
+  </ItemGroup>
+
 </Project>
