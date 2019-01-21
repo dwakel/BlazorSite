@@ -1,32 +1,35 @@
 ﻿@page "/projects"
+<section>
+    <div class="sub-details-card">
 
-<h1>Todo (@todos.Count(todo => !todo.IsDone))</h1>
+        <h2 class="section-header">Projects</h2>
+        <p>
+            <pre>
+            <em>"At no time in the ten thousand years or so since the last ice age has the human race been in
+            a state of constant knowledge and fixed technology."- Stephen Hawking</em>
+        </pre>
+        </p>
+    </div>
+    <br />
 
-<ul>
-    @foreach (var todo in todos)
-    {
+    <div class="project-container">
+        <a href="https://github.com/dwakel/LChess" class="project-block-1"><img class="proj-img" src="/img/lches.png" /></a>
+        <a href="https://github.com/dwakel/simpleBTRobotControl" class="project-block-2"><img class="proj-img" src="/img/arduino.jpg" /></a>
+    </div>
+</section>
+<section id="footer">
+    <div class="sub-details-card">
 
-    <li>
-        <input type="checkbox" bind="@todo.IsDone" />
-        <input bind="@todo.Title" />
-    </li>
-    }
-</ul>
-
-<input placeholder="Something todo" bind="@newTodo" />
-<button onclick="@AddTodo">Add todo</button>
-
+        <h2 class="section-header">Contact</h2>
+        <p>
+            <pre>
+            <em>"At no time in the ten thousand years or so since the last ice age has the human race been in
+            a state of constant knowledge and fixed technology."- Stephen Hawking</em>
+        </pre>
+        </p>
+    </div>
+    <br />
+</section>
 @functions{
-    IList<TodoItem> todos = new List<TodoItem>();
-    string newTodo;
 
-    void AddTodo()
-    {
-        if (!string.IsNullOrWhiteSpace(newTodo))
-        {
-            todos.Add(new TodoItem { Title = newTodo, IsDone = new bool() });
-            newTodo = string.Empty;
-        }
-
-    }
 }
