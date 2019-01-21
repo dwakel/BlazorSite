@@ -1,0 +1,86 @@
+﻿@page "/experiences"
+<section id="experience-header">
+    <div id="details-card">
+
+        <h2 class="section-header">Experiences</h2>
+        <p>
+            <pre>
+            <em>"At no time in the ten thousand years or so since the last ice age has the human race been in
+            a state of constant knowledge and fixed technology."- Stephen Hawking</em>
+        </pre>
+        </p>
+    </div>
+    <br />
+
+    <div class="education-card">
+        <div class="card-header">
+            <h3>Education</h3>
+        </div>
+        <div class="card-definition">
+            <h5>University of Mines and Technology</h5>
+            <p>Sept 2014 - Jun 2018</p>
+        </div>
+        <div class="card-information">
+            <h5>Bachelor - Computer Science & Engineering</h5>
+            <p>
+                At no time in the ten thousand years or so
+                since the last ice age has the human race been in
+                a state of constant knowledge and fixed technology."-
+                Stephen Hawking
+            </p>
+        </div>
+    </div>
+
+    <div class="career-card">
+        <div class="card-header">
+            <h3>Career</h3>
+        </div>
+        <div class="career-def-1">
+            <h5>Working IT Solutions</h5>
+            <p>Sept 2018 - Current</p>
+        </div>
+        <div class="career-inf-1">
+            <h5>Bachelor - Computer Science & Engineering</h5>
+            <p>
+                As part of the academic curiculum, I was exposed to and had the oppotunity
+                to use a variety of programming languages, C, C++, C#, Visual Basic, PHP, Java, SQL.
+                I also learned about UML, SDLC, Design practices, Compiler design, micro-controllers.
+                I specialized in C#.
+            </p>
+        </div>
+        <div class="career-def-2">
+            <h5>University of Education Winneba</h5>
+            <p>Jun 2016 - Aug 2016</p>
+        </div>
+        <div class="career-inf-2">
+            <h5>Internship - IT Directorate</h5>
+            <p>
+                I performed various duties in the IT Directorate. These include Internet maintainance,
+                Computer maintenance, repair of University office computers.
+            </p>
+        </div>
+        <div class="career-def-3">
+            <h5>University of Education Winneba</h5>
+            <p>Jun 2014 - Aug 2014</p>
+        </div>
+        <div class="career-inf-3">
+            <h5>Internship - Graduate School Computer laboratory</h5>
+            <p>
+                I served as an IT assistant to graduate students and helped them solve various
+                problems and assisted them in perform simple task. My role spanned from Assistance in printing,
+                document editing to fixing of damaged computers in the laboratory.
+            </p>
+        </div>
+    </div>
+</section>
+
+@functions {
+int currentCount = 0;
+[Parameter]
+private int IncreamentAmount { get; set; } = 1;
+
+void IncrementCount()
+{
+    currentCount += IncreamentAmount;
+}
+}
