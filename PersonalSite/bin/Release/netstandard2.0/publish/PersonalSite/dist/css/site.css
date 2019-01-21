@@ -177,6 +177,10 @@ app {
     background-color: wheat;
 }
 
+#abilities-header {
+    background-color: white;
+}
+
 #avatar {
     width: 10em;
     height: 10em;
@@ -192,6 +196,11 @@ app {
 .title-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.company-img {
+    width: 60px;
+    height: 50px;
 }
 
 #location {

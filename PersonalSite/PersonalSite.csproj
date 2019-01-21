@@ -17,7 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Watch Remove="Pages\Abilities.cshtml" />
     <Watch Remove="Pages\Experiences.cshtml" />
+    <Watch Remove="Pages\Projects.cshtml" />
   </ItemGroup>
 
 </Project>
