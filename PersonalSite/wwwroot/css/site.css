@@ -148,6 +148,8 @@ app {
 
 #details-card {
     text-align: center;
+    z-index: 1;
+    position: relative;
 }
 
 .sub-details-card {
@@ -166,7 +168,8 @@ app {
 #name {
     font-size: 4rem;
     margin-top: 0.5rem;
-    background: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    /*background: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);*/
+    background-color: white;
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -174,20 +177,34 @@ app {
 }
 
 #main-section {
-    background: #0F2027; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: calc(100vh - 6.8rem);
+    /*background: #0F2027;*/ /* fallback for old browsers
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  Chrome 10-25, Safari 5.1-6
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*background-color: #212529;*/ /*#2c3e50;*/
     padding: 3rem;
-    border: 0.5rem solid #3a0647;
+    border: 0.5rem solid #434242;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../img/wall.jpg);
+    z-index: -1;
+    position: relative;
 }
 
-#experience-header {
-    background-color: wheat;
+.main-img {
+    /*background-color: #212529;*/
+    background-color: blue;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+    width: 600px;
+    height: 600px;
+}
+
+#experience-section {
+    background-color: #212529;
+    color: white;
 }
 
 #abilities-header {
@@ -198,11 +215,11 @@ app {
     width: 10em;
     height: 10em;
     border-radius: 50%;
-    border: 2px solid #3a0647;
+    border: 3px solid #434242;
 }
 
 #title {
-    color: wheat;
+    color: white;
     grid-column: 2 / 5;
 }
 
@@ -330,21 +347,46 @@ hr {
 
 .project-block-1 {
     grid-column: 2 / 4;
+    margin-bottom: 5em;
+    border-radius: 50%;
+    color: green;
+    border: 3px;
 }
+
+/*a {
+    border-radius: 50%;
+    color: green;
+    border: 3px;
+    border: solid;
+}*/
 
 .project-block-2 {
     grid-column: 4 / 6;
+    margin-bottom: 5em;
 }
 
 .proj-img {
     width: 20em;
     height: 20em;
+    border-radius: 3%;
 }
 
     .proj-img :hover {
         color: gray;
     }
 
+#project-section {
+    background-color: #F3EFE0;
+    color: white;
+}
+
 #footer {
     background-color: #434242;
+}
+
+.proj-cont {
+}
+
+ul {
+    list-style: none;
 }
